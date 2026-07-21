@@ -37,7 +37,7 @@ class OrderIn(BaseModel):
 
 @app.get("/health", tags=["health"])
 def health():
-    return {"status": "ok"}
+    return {"status": "ok", "message": "Deploy validado - Elbia"}
 
 
 @app.post("/orders", status_code=status.HTTP_201_CREATED, tags=["orders"])
